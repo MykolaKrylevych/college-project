@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tractor Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-600 font-body">
+    
+    <div class="grid md:grid-cols-3"> 
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/" class="text-green-500 hover:text-green-600">Tractor Store</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                        </svg>
+                          
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-red-400">
+                            <span>Home</span>
+                            
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />    
+                            </svg>
+                              
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="about.html" class="px-4 flex justify-end border-r-4 hover:border-red-400 ">
+                            <span>About</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                              
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="about.html" class="px-4 flex justify-end border-r-4 hover:border-red-400 ">
+                            <span>Your Cart</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                              
+                              
+                        </a>
+                    </li>
+                    <li class="pt-10 py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 hover:border-red-400">
+                            <span>Currency</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 hover:border-red-400">
+                            <span>Language</span>
+                            <img src="img/flag-1.png" alt="usa-flag" class="w-5 ml-2">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+    
+    <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+    <div class="flex justify-center md:justify-end">
+        <a href="#" class="text-primary btn  hover:text-gray-500 hover:border-gray-700 border-primary md:border-2 transition ease-out duration-500">Log in</a>
+        <a href="#" class="text-primary ml-2 btn hover:text-gray-500 hover:border-gray-700 border-primary md:border-2 transition ease-out duration-500">Sign in</a>
+    </div>
+
+    <header>
+        <h2 class="text-gray-700 text-6xl font-semibold">Tractors&Tools</h2>
+        <h3 class="text-2xl font-semibold">For Everyone</h3>
+    </header>
+
+    <div>
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Novelties</h4>
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <div class="card hover:shadow-2xl border-2 border-gray-300">
+                <img src="https://budpostach.ua/image/cache/webp/catalog/easyphoto/10179/m-n-traktor-dizelniy-sf-240lr-shifeng-1-1200x1200.webp" alt="tractor" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">4513$</span>
+                    <span class="block text-gray-500 text-sm">SF-244 Shifeng</span>
+                </div>
+                <div class="badge">
+                    <span>15% sale</span>
+                </div>
+            </div>
+            <div class="card hover:shadow-2xl border-2 border-gray-300">
+                <img src="https://budpostach.ua/image/cache/webp/catalog/easyphoto/3590/motokosa-forte-bmk-3100m-1-1200x1200.webp" alt="tractor" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">87$</span>
+                    <span class="block text-gray-500 text-sm">Forte БMK-3100М</span>
+                </div>
+                <div class="badge">
+                    <span>5% sale</span>
+                </div>
+            </div>
+            <div class="card hover:shadow-2xl border-2 border-gray-300">
+                <img src="https://budpostach.ua/image/cache/webp/catalog/easyphoto/3501/m-n-traktor-dizelniy-xt-244-3-1-forte-1-1200x1200.webp" alt="tractor" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">5139$</span>
+                    <span class="block text-gray-500 text-sm">XT-244 (3+1) Forte</span>
+                </div>
+                <div class="badge">
+                    <span>25% sale</span>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular</h4>
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <!-- Cards -->
+            <div class="card hover:shadow-2xl border-2 border-gray-300">
+                <img src="img/tractor2.jpg" alt="tractor" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">77.880$</span>
+                    <span class="block text-gray-500 text-sm">John Deere 5115R</span>
+                </div>
+            </div>
+            <div class="card hover:shadow-2xl border-2 border-gray-300">
+                <img src="img/tractor.jpg" alt="tractor" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">77.880$</span>
+                    <span class="block text-gray-500 text-sm">John Deere 5115R</span>
+                </div>
+                
+            </div>
+            <div class="card hover:shadow-2xl border-2 border-gray-300">
+                <img src="img/tractor.jpg" alt="tractor" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">77.880$</span>
+                    <span class="block text-gray-500 text-sm">John Deere 5115R</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-8">
+            <div class="bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-105 hover:bg-opacity-50 transi ease-out duration-300">Load more</div>
+        </div>
+    </div>
+
+    </main>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
